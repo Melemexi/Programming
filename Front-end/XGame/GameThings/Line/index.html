@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Line</title>
+</head>
+<body>
+    <div id="line">
+        <div id="inner"></div>
+    </div>
+    <button id="reset">Reset</button>
+    <button id="b1" onclick="setInterval(cycle, 1000)">1000 мс</button>
+    <button id="b2" onclick="setInterval(cycle, 500)">500 мс</button>
+    <button id="b3" onclick="setInterval(cycle, 100)">100 мс</button>
+    <button id="b4" onclick="setInterval(cycle, 40)">50 мс</button>
+    <button id="b5" onclick="setInterval(cycle, 10)">10 мс</button>
+    <button id="b6" onclick="setInterval(cycle, 4)">5 мс</button>
+    <button id="b7" onclick="setInterval(cycle, 1)">1 мс</button>
+    <button id="b7" onclick="setInterval(cycle, 1);setInterval(cycle, 1);">one more</button>
+    <button id="b7" onclick="setInterval(cycle, 1);setInterval(cycle, 1);setInterval(cycle, 1);">again one more</button>
+    
+    <script> 
+        var abc=1;
+        function changewidth(width)
+        {
+            var changedwidth = width+"px";
+            document.getElementById("inner").style.width=changedwidth;
+        }
+        
+        function cycle()
+        {
+            if(abc<1920)
+            {
+                changewidth(abc);
+                abc++;
+            }
+        }
+        
+        function sleep (time) {
+          return new Promise((resolve) => setTimeout(resolve, time));
+        }
+        
+        document.getElementById('reset').onclick = function(){
+            document.getElementById('inner').style.width='0px';
+            abc=0;
+            for (var i = 1; i < 99999; i++)
+            {
+                window.clearInterval(i);
+            }
+        }
+        
+        function reset()
+        {
+            document.getElementById('inner').style.width='0px';
+            abc=0;
+            for (var i = 1; i < 99999; i++)
+            {
+                window.clearInterval(i);
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#line{
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    background:#00549d;
+    margin-bottom: 50px;
+}
+
+#inner{
+    width: 0%;
+    height: 50px;
+    background:#34a1ff;
+}
+
+button{
+    font-size: 24px;
+    border:none;
+    background: none;
+    border:1px solid black;
+    padding: 5px 15px;
+    margin-right: -5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background: #333;
+    color:white;
+    
+}
