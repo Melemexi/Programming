@@ -1,0 +1,61 @@
+<?php require "db.php"; ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.css">
+
+    <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+    
+    <link rel="shortcut icon" href="favicon.ico"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="jquery.iMissYou.js"></script>
+        <script>
+    jQuery(document).ready(function($){
+        $.iMissYou({
+            title: "Нажми сюда!",
+            favicon: {
+                enabled: true,
+                src:'iMissYouFavicon'
+            }
+        });
+    });
+</script>
+	<title>Главная страница</title>
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="bet" onclick="a();">
+        <div id="head">VP против SK</div>
+        <div id="winner">VP</div>
+        <div id="time">20:45</div>
+        <div id="procent">15</div>
+        <div id="money">15000</div>
+        <div id="info">BO3</div>
+        <div id="maps">de_cache, de_inferno, de_dust2</div>
+        <div id="text">Very easy game for VP!</div>
+    </div>
+</div>
+<script>
+    function a(){
+        swal(
+  'Пост добавлен!',
+  'Поздровляем, ваш пост был удачно добавлен!',
+  'success'
+)
+    }
+</script>
+</body>
+</html>
+
+
+
+
+<?php
+//$one = R::findone( 'Predictions', ' id LIKE ? ', ['1']);
+//echo $one['winner'],' ',$one['loser'],' ',$one['loser'],' ',$one['timeofmatch'],' ',$one['procent'],' ',$one['bet'],' ',$one['maps'],' ',$one['text'];
+?>
