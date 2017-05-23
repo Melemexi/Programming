@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School #644</title>
+    <link rel="stylesheet/less" href="styles/style.less">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#nav li').hover(function(){
+                $(this).children('ul').stop(false, true).fadeIn(300);
+                $(this).children('a').addClass('selected');
+            },function(){
+                $(this).children('ul').stop(false, true).fadeOut(300);
+                $(this).children('a').removeClass('selected');
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <div id="page-wrapper">
+        <div id="page">
+            <div id="head">
+                <div id="inner-head">
+                    <img src="header_new.gif" alt="">
+                </div>
+            </div>
+            <div id="menu">
+                <div id="inner-menu">
+                    <div id="nav">
+                    <li><a href="#">Основые сведения</a>
+                        <ul>
+                            <li><a href="#">Основные сведения</a></li>
+                            <li><a href="#">Структура и органы управления оброзовательной организации</a></li>
+                            <li><a href="#">Документы</a></li>
+                            <li><a href="#">Образование</a></li>
+                            <li><a href="#">Образовательные стандарты</a></li>
+                            <li><a href="#">Руководство</a></li>
+                            <li><a href="#">Педагогический совет</a></li>
+                            <li><a href="#">Комфортность условйи, в которых осуществляется образовательная деятельность(Материально-техническое обеспечение)</a></li>
+                            <li><a href="#">Стипендии и иные виды материальныой поддержки</a></li>
+                            <li><a href="#">Платные образовательные услуги</a></li>
+                            <li><a href="#">Финансово-хозяйственная деятельность</a></li>
+                            <li><a href="#">Вакантные места для приема (превода)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Element 2</a>
+                        <ul>
+                            <li><a href="#">Sub-Element</a></li>
+                            <li><a href="#">Sub-Element</a></li>
+                            <li><a href="#">Sub-Element</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Element 3</a>
+                        <ul>
+                            <li><a href="#">Sub-Element</a></li>
+                            <li><a href="#">Sub-Element</a></li>
+                            <li><a href="#">Sub-Element</a></li>
+                            <li><a href="#">Sub-Element</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Element 4</a></li>
+                    <li><a href="#">Element 5</a></li>
+                </div>
+                </div>
+            </div>
+            <div id="body">
+                <div id="inner-body">
+                    <div id="blocks">
+                        <div id="block">
+                        <div id="inner-block"></div>
+                        </div>
+                        <div id="block">
+                            <div id="inner-block"></div>
+                        </div>
+                        <div id="block">
+                            <div id="inner-block"></div>
+                        </div>
+                        <div id="block">
+                            <div id="inner-block"></div>
+                        </div>
+                        <div id="block">
+                        <div id="inner-block"></div>
+                        </div>
+                        <div id="block">
+                            <div id="inner-block"></div>
+                        </div>
+                        
+                    </div>
+                    <div id="desk">
+                        <img src="http://school644.spb.ru/invalid/sreda.jpg" alt="">
+                        <p>Доска объявлений:</p>
+                        <img src="http://school644.spb.ru/stiker.png" alt="">
+                        <img src="http://school644.spb.ru/anti.jpga" alt="">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

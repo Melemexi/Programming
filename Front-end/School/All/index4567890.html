@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School #644</title>
+    <link rel="stylesheet/less" href="styles/style.less">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#nav li').hover(function(){
+                $(this).children('ul').stop(false, true).fadeIn(300);
+                $(this).children('a').addClass('selected');
+            },function(){
+                $(this).children('ul').stop(false, true).fadeOut(300);
+                $(this).children('a').removeClass('selected');
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <div id="page-wrapper">
+        <div id="page">
+            <div id="head">
+                <div id="inner-head">
+                    Name of the site
+                </div>
+            </div>
+            <div id="menu">
+                <div id="inner-menu">
+                    <div id="nav">
+                    <li><a href="#">Element 1</a>
+                        <ul>
+                            <li><a href="#">Sub-Element</a></li>
+                            <li><a href="#">Sub-Element</a></li>
+                            <li><a href="#">Sub-Element</a></li>
+                            <li><a href="#">Sub-Element</a></li>
+                            <li><a href="#">Sub-Element</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Element 2</a>
+                        <ul>
+                            <li><a href="#">Sub-Element</a></li>
+                            <li><a href="#">Sub-Element</a></li>
+                            <li><a href="#">Sub-Element</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Element 3</a>
+                        <ul>
+                            <li><a href="#">Sub-Element</a></li>
+                            <li><a href="#">Sub-Element</a></li>
+                            <li><a href="#">Sub-Element</a></li>
+                            <li><a href="#">Sub-Element</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Element 4</a></li>
+                    <li><a href="#">Element 5</a></li>
+                </div>
+                </div>
+            </div>
+            <div id="body">
+                <div id="inner-body">
+                    <div id="blocks">
+                        <div id="block">
+                        <div id="inner-block"></div>
+                        </div>
+                        <div id="block">
+                            <div id="inner-block"></div>
+                        </div>
+                        <div id="block">
+                            <div id="inner-block"></div>
+                        </div>
+                        <div id="block">
+                            <div id="inner-block"></div>
+                        </div>
+                        <div id="block">
+                        <div id="inner-block"></div>
+                        </div>
+                        <div id="block">
+                            <div id="inner-block"></div>
+                        </div>
+                        
+                    </div>
+                    <div id="desk">
+                        Доска объявлений
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
