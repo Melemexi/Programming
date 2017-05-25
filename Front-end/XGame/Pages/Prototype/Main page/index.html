@@ -124,5 +124,47 @@
             </div>
         </div>
     </div>
+    
+    <!-- JAVASCRIPT -->
+     <script> 
+        var abc=1;
+        function changewidth(width)
+        {
+            var changedwidth = width+"px";
+            document.getElementById("inner").style.width=changedwidth;
+        }
+        
+        function cycle()
+        {
+            if(abc<1920)
+            {
+                changewidth(abc);
+                abc++;
+            }
+        }
+        
+        function sleep (time) {
+          return new Promise((resolve) => setTimeout(resolve, time));
+        }
+        
+        document.getElementById('reset').onclick = function(){
+            document.getElementById('inner').style.width='0px';
+            abc=0;
+            for (var i = 1; i < 99999; i++)
+            {
+                window.clearInterval(i);
+            }
+        }
+        
+        function reset()
+        {
+            document.getElementById('inner').style.width='0px';
+            abc=0;
+            for (var i = 1; i < 99999; i++)
+            {
+                window.clearInterval(i);
+            }
+        }
+    </script>
 </body>
 </html>
